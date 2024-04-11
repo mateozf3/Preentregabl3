@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegador">
+            <ul class="navegador-links">
+                <li class="navegador-link"><a href="./index.html">Inicio</a></li>
+                <li class="navegador-link"><a href="./recetasdulces.html">Recetas Dulces</a></li>
+                <li class="navegador-link"><a href="./videorecetas.html">Videos Recetas</a></li>
+                <li class="navegador-link"><a href="./contactos.html">Contactos</a></li>
+                <h1 class="titulo">Cocina fácil</h1>
+            </ul>
+        </nav>
+        <div class="portada">        
+            <img src="./img/1.png" alt="Logo de la empresa">
+        </div>
+    </header>
+    <main>
+        <h2 class="titulo">Contactos</h2>
+        <form class="formulario-contactos">
+            <section class="form-contactos-grupo">
+                <label class="form-contactos-grupo-label" for="email-usuario">Email</label>
+                <input class="form-contactos-grupo-input" type="email" name="email-usuario">
+            </section>
+            <section>
+                <label class="form-contactos-grupo-label" for="nombre-apellido">Nombre y Apellido</label>
+                <input class="form-contactos-grupo-input" type="text" name="nombre-apellido">
+            </section>
+            <section>
+                <label class="form-contactos-grupo-label" for="edad">Edad</label>
+                <input class="form-contactos-grupo-input"  type="number" name="edad">
+            </section>
+            <section>
+                <label class="form-contactos-grupo-label" for="mensaje">Mensaje</label>
+                <textarea class="form-contactos-grupo-input" name="mensaje"></textarea>
+            </section>
+            <section>
+                <label class="form-contactos-grupo-label" for="">Hombre</label>
+                <input class="form-contactos-grupo-input" type="radio" name="sexo"> 
+                <label class="form-contactos-grupo-label" for="">Mujer</label>
+                <input class="form-contactos-grupo-input" type="radio" name="sexo"> 
+                <label class="form-contactos-grupo-label" for="">No binario</label>
+                <input class="form-contactos-grupo-input"  type="radio" name="sexo"> 
+            </section>
+            <section>
+                <label class="form-contactos-grupo-label" for="terminos">Acepta términos y condiciones?</label>
+                <input class="form-contactos-grupo-input" type="checkbox" name="terminos">
+            </section>
+            <button class="boton" type="submit">Enviar</button>
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>Copyright © Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
