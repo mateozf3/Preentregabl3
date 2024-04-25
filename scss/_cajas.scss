@@ -1,0 +1,74 @@
+.cajas {
+    @extend %cajas;
+}
+
+.caja {
+    @extend %caja;
+}
+
+.parrafo1 {
+        font-size: 21px;
+        color:$color-terciario;
+        text-align: start;
+        padding: 30px 90px 0px 90px;
+        text-shadow:$sombra;
+        @media(max-width: 992px){
+               padding: 18px;
+        }
+        @media(max-width: 556px){
+                      padding: 7px;
+        }
+}
+
+.caja-titulo{
+        font-weight: normal;
+}
+
+.caja-img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.caja-boton{
+    @extend %boton;
+}
+
+h2 {
+    background-image: linear-gradient(37deg, hsl(0, 98%, 59%), transparent);
+    font-size: 35px;
+    color:$color-contraste;
+    text-align: start;
+    padding: 4px 90px 4px 90px;
+    @media(max-width: 556px){
+            padding: 4px;
+    }
+}
+
+h4 {
+    font-size: 23px;
+    color:$color-contraste;
+    padding: 0px 15px 0px 15px;
+    @media(max-width: 768px){
+            font-size: 26px;
+            padding: 0px;
+           }
+    @media(max-width: 556px){
+                font-size: 22px;
+                padding: 8px;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

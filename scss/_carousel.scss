@@ -1,0 +1,48 @@
+.carousel-recetas{
+    width: 70%;
+    margin:auto;
+    padding: 5px;
+    @media(max-width: 1024px){
+        width: 90%;
+    }
+    @media(max-width: 992px){
+        width: 90%;
+}
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+    @media(max-width: 556px){
+        width: 95%;
+    }
+
+}
+
+.carousel-item{
+    h5{
+        font-size: 32px;
+        text-shadow: $sombra;
+        @media(max-width: 1324px){
+        font-size: 23px;
+        }
+    }
+    p{
+        font-size: 24px;
+        text-shadow: $sombra;
+        @media(max-width: 1324px){
+            font-size: 20px;
+        }
+        @media(max-width: 1024px){
+            font-size: 22px;
+        }
+        @media(max-width: 877px){
+            font-size: 19px;
+        }
+        @media(max-width: 367px){
+            font-size: 197px;
+        }
+    }
+}
+
+.carousel-indicators{
+    z-index: 1;
+}

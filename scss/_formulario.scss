@@ -1,0 +1,100 @@
+.form-contactos{
+    background-color:$color-formulario;
+    width: 90%;
+    max-width: 600px; 
+    margin: auto;
+    padding: 20px;
+    border-radius:$radio-bordes;
+    border: 2px solid $color-secundario;
+    margin-bottom: 7px;
+
+    section {
+    margin-bottom: 20px;
+    } 
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    @media(max-width: 768px){
+            width: 95%;
+    }   
+}
+
+.form-contactos-grupo{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    gap: 2px;
+    margin: 20px 0px;
+}
+
+.form-contactos-grupo-terminos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form-contactos-grupo-mensaje{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    gap: 9px;
+    margin: 20px 0px;
+}
+
+.form-contactos-grupo-genero{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    justify-content: center;
+    input[type="radio"] {
+        width: 15px;
+        height: 15px; 
+        margin: 6px 40px 0px 10px;  
+    } 
+    @media(max-width: 556px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form-contactos-grupo-label{
+  color:$dark;
+}
+
+.form-contactos-grupo-input{
+    width: 100%;
+    background-color: transparent;
+    color:$color-secundario;
+    border: 1px solid $dark;
+    padding: 5px 10px;
+    border-radius: $radio-bordes;
+    transition: 0.5s;
+    cursor: pointer;
+    &:focus{
+        border: 2px solid $color-secundario;
+        outline: none;
+    }
+    &[type="email"]::placeholder,
+    &[type="text"]::placeholder,
+    &[type="number"]::placeholder,
+    &[placeholder="Mensaje"]::placeholder {
+        color:$dark;
+    }
+}
+
+.form-contactos-boton {
+    width: 100%;
+    background-color:$color-terciario;
+    color:$color-contraste;
+    font-weight: bold;
+    border: none;
+    border-radius: $radio-bordes;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover{
+        background-color:$color-secundario;
+    }
+
+}

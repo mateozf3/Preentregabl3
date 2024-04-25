@@ -6,45 +6,94 @@
     <title>Inicio</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <header class="encabezado">
         <nav class="navegador">
+            <i class="icono-menu fa-solid fa-bars"></i>
             <ul class="navegador-links">
-                <li class="navegador-link"><a href="./index.html">Inicio</a></li>
-                <li class="navegador-link"><a href="./recetasdulces.html">Recetas Dulces</a></li>
-                <li class="navegador-link"><a href="./videorecetas.html">Videos Recetas</a></li>
-                <li class="navegador-link"><a href="./contactos.html">Contactos</a></li>
-                <h1 class="titulo">Cocina fácil</h1>
+                <li class="navegador-link"><a href="./index.html">Inicio <i class="fa-solid fa-house"></i></a></li>
+                <li class="navegador-link"><a href="./pages/recetasdulces.html">Recetas Dulces <i class="fa-solid fa-cookie-bite"></i></a></li>
+                <li class="navegador-link"><a href="./pages/videorecetas.html">Videos Recetas <i class="fa-solid fa-film"></i></a></li>
+                <li class="navegador-link"><a href="./pages/contactos.html">Contactos <i class="fa-solid fa-address-book"></i></a></li>
             </ul>
+            <h1 class="titulo">Cocina fácil</h1>
         </nav>
-        <div class="portada">        
-            <img src="./img/1.png" alt="Logo de la empresa">
-        </div>
+        <section id="carouselExampleCaptions" class="carousel-recetas carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../carousel/assortment-with-delicious-local-food-dish.jpg" class="d-block w-100" alt="Sopa de Tomate">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sopa de Tomate</h5>
+                <p>La sopa de tomate, un plato tradicional, se prepara con tomates maduros, cebolla, ajo y caldo, sazonada con hierbas frescas. Originaria de Europa, ha sido adaptada en todo el mundo con ingredientes locales.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../carousel/high-protein-pasta-meal-close-up-detail.jpg" class="d-block w-100" alt="Pasta Alfredo">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pasta Alfredo</h5>
+                <p>La pasta Alfredo es un plato italiano con pasta en salsa cremosa de mantequilla, queso parmesano y a veces crema. Se sazona y se mezcla con la pasta caliente. Es famoso por su sabor rico y es una opción reconfortante y popular.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../carousel/ensalada-cesar-vista-superior-plato-ovalado-tenedor-cuchillo-sobre-fondo-rojo-oscuro_140725-124359-fotor-20240424154122.jpg" class="d-block w-100" alt="Ensalada César">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ensalada César</h5>
+                <p>La ensalada César es una opción popular en restaurantes de todo el mundo. Hecha con lechuga romana, crutones, queso parmesano y aderezo César, ofrece una mezcla deliciosa de sabores y texturas. Originada en México, se ha convertido en un clásico de la cocina internacional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../carousel/colorful-tasty-hummus-with-ingredients.jpg" class="d-block w-100" alt="Hummus Casero">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hummus Casero</h5>
+                <p>El hummus casero es una pasta de garbanzos, tahini, jugo de limón, ajo y aceite de oliva, condimentada con sal y comino. Es un aperitivo popular en la cocina mediterránea y del Medio Oriente, perfecto con pan de pita o verduras frescas. Su receta se puede personalizar según gustos.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </section>     
     </header>
-    <main class="main">         
+    <main>   
         <h2>Recetas de cocina fáciles</h2>  
         <section class="cajas">
             <article class="caja">
-                <h4>Charquican, un plato tradicional chileno</h4>
-                <img class="entrada1" src="./img/Charquican, un plato tradicional chileno.png" alt="Charquican, un plato tradicional chileno">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugiat sapiente maiores recusandae enim. Temporibus molestias quas facilis quia nemo sed, fugiat eligendi! Eos vitae sit iste cumque excepturi! Expedita?</p>
+                <h4 class="caja-titulo">Charquican, un plato tradicional chileno</h4>
+                <img class="caja-img" src="./img/Charquican, un plato tradicional chileno.png" alt="Charquican, un plato tradicional chileno">
+                <p>El charquicán es un plato tradicional chileno, una especie de guiso que combina carne seca (charqui) desmenuzada con diversas verduras como papas, zanahorias, cebolla y choclo (maíz). Se sazona con especias como comino y se sirve caliente, a menudo acompañado de arroz.</p>
+                <button class="caja-boton">Ver</button>
             </article>
             <article class="caja">
-                <h4>Chorrillana con patatas fritas</h4>
-                <img class="entrada2" src="./img/chorrillana-patatas-fritas.png" alt="Chorrillana patatas fritas">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugiat sapiente maiores recusandae enim. Temporibus molestias quas facilis quia nemo sed, fugiat eligendi! Eos vitae sit iste cumque excepturi! Expedita?</p>
+                <h4 class="caja-titulo">Chorrillana con patatas fritas</h4>
+                <img class="caja-img" src="./img/chorrillana-patatas-fritas.png" alt="Chorrillana patatas fritas">
+                <p>La chorrillana es un plato chileno que combina papas fritas con carne, cebolla frita y ocasionalmente huevo. Es popular en reuniones sociales y su origen se atribuye a un restaurante llamado "El Chorrillano" en Valparaíso, Chile.</p>
+                <button class="caja-boton">Ver</button>
             </article>
             <article class="caja">
-                <h4>Salteado de carne con pimientos, judías verdes y arroz</h4>
-                <img class="entrada3" src="./img/salteado-carne-pimientos-judias-verdes-arroz.png" alt="Salteado carne pimientos judias verdes arroz">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugiat sapiente maiores recusandae enim. Temporibus molestias quas facilis quia nemo sed, fugiat eligendi! Eos vitae sit iste cumque excepturi! Expedita?</p>
+                <h4 class="caja-titulo">Salteado de carne con pimientos, judías verdes y arroz</h4>
+                <img class="caja-img" src="./img/salteado-carne-pimientos-judias-verdes-arroz.png" alt="Salteado carne pimientos judias verdes arroz">
+                <p>El salteado de carne con pimientos, judías verdes y arroz es un plato equilibrado que combina carne, verduras y arroz. Es sabroso, fácil de preparar y se puede personalizar según los gustos personales.</p>
+                <button class="caja-boton">Ver</button>
             </article>
             <article class="caja">
-                <h4>Tomatican</h4>
-                <img class="entrada4" src="./img/Tomatican.png" alt="Tomatican">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugiat sapiente maiores recusandae enim. Temporibus molestias quas facilis quia nemo sed, fugiat eligendi! Eos vitae sit iste cumque excepturi! Expedita?</p>
+                <h4 class="caja-titulo">Tomatican</h4>
+                <img class="caja-img" src="./img/Tomatican.png" alt="Tomatican">
+                <p>El tomaticán es un plato típico chileno que consiste en un guiso de carne de vacuno o cerdo cocida con tomates, cebollas y condimentos. A menudo se acompaña de papas cocidas y se sirve caliente. Es una comida reconfortante y sabrosa que refleja la tradición culinaria de Chile.</p>
+                <button class="caja-boton">Ver</button>
             </article>
         </section>
     </main>
