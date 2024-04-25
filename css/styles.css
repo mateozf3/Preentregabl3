@@ -88,7 +88,7 @@ body {
 }
 .navegador .icono-menu {
   color: #fff2e2;
-  font-size: 24px;
+  font-size: 40px;
   padding: 20px 5px;
   display: none;
 }
@@ -161,8 +161,8 @@ body {
 @media (max-width: 556px) {
   .titulo {
     margin: auto;
-    font-size: 47px;
-    margin-bottom: 7px;
+    font-size: 50px;
+    margin-bottom: 0px;
   }
 }
 
